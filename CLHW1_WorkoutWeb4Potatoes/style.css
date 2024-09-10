@@ -1,0 +1,113 @@
+body {
+    padding:50px;
+    background-color:bisque;
+    font-family:'Courier New', Courier, monospace;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    gap:50px;
+
+}
+
+img{
+    width:40%;
+    height:40%;
+    align-items: center;
+}
+.top_title{
+    box-sizing: border-box;
+    font-size: 70px; 
+    display:inline-block;
+    color: white;
+    font-family: fantasy;
+    text-align: center;
+    background-color: red;
+}
+.logo{
+    width:20%;
+    display:inline-block;
+}
+.section{
+    width:49%;
+    display: inline-block;
+    align-items: topS;
+}
+.promotion{
+    width:49%;
+    color:black;
+    text-shadow:
+    1px 1px 1px rgb(255, 255, 255);
+}
+.promotionpic{
+    width:20%;
+    height:20%;
+    align-items: center;
+}
+p{
+    font-size: 18px;
+    display: inline-block;
+}
+
+.mrpotato {
+    width:30%;
+    height:30%;
+    align-items:flex-start;
+    display:inline-flex;
+}
+.social_workout{
+    width:20%;
+    height:20%;
+    align-items: center;
+}
+
+
+section:hover{
+    background-color:whitesmoke ;
+    animation-duration: 2s;
+    animation-name: color-change;
+}
+
+
+.logo{
+animation-name: move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0vh);
+  }
+
+  18% {
+    transform: translateX(12vh);
+  }
+
+  36% {
+    transform: translateX(24vh);
+  }
+
+  54% {
+    transform: translateX(38vh);
+  }
+
+  70% {
+    transform: translateX(52vh);
+  }
+}
+
+@keyframes color-change{
+    from{
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@media (max-width: 610px){
+    .project__image {
+        width: 360px;
+        margin-top: 20px;
+    }
+}
